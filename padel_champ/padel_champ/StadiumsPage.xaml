@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="padel_champ.StadiumsPage"
+             Title="StadiumsPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="2"  BackgroundColor="White" FlowDirection="LeftToRight">
+
+            <HorizontalStackLayout>
+                <BoxView WidthRequest="10" Color="White"/>
+                <Label Text="Hello," FontSize="28" FontFamily="bold" TextColor="#BFBFBF" HorizontalTextAlignment="End"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <BoxView WidthRequest="10" Color="White"/>
+                <Label Text="select a stadium" FontSize="28" FontFamily="bold" TextColor="#2c3b53" HorizontalTextAlignment="End" />
+            </HorizontalStackLayout>
+
+            <Frame WidthRequest="350" HeightRequest="60"  CornerRadius="30" HasShadow="True" FlowDirection="LeftToRight" HorizontalOptions="Start" Margin="10">
+
+                <HorizontalStackLayout>
+                    <ImageButton Source="search_icon2.jpeg" WidthRequest="20" HeightRequest="20" Clicked="SearchButton_Clicked" />
+                    <BoxView WidthRequest="15" Color="White"/>
+
+                    <Editor x:Name="searchEditor" Placeholder="Search for stadiums" WidthRequest="200" HeightRequest="50" FontSize="15" VerticalOptions="FillAndExpand" TextColor="Black" Text="{Binding SearchText, Mode=TwoWay}"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+
+            <VerticalStackLayout Spacing="20">
+                <HorizontalStackLayout>
+                    <BoxView WidthRequest="10" Color="White"/>
+
+                    <Label Text="Stadiums" FontSize="28" FontFamily="bold" TextColor="#2c3b53" HorizontalTextAlignment="End"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Padel In Jeddah" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b1"  CornerRadius="20" Clicked="b1_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b11" Clicked="Button_Clicked_1"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Padel Cube" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b2"  CornerRadius="20" Clicked="b2_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b12" Clicked="Button_Clicked_2"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Padel Royale" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b4"  CornerRadius="20" Clicked="b4_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b14" Clicked="Button_Clicked_4"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="PW Padel World" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b5"  CornerRadius="20" Clicked="b5_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b15" Clicked="Button_Clicked_5"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Just Padel" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b6"  CornerRadius="20" Clicked="b6_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b16" Clicked="Button_Clicked_6"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Padelhood" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b7"  CornerRadius="20" Clicked="b7_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b17" Clicked="Button_Clicked_7"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="The Padel Place Jed" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b8"  CornerRadius="20" Clicked="b8_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b18" Clicked="Button_Clicked_8"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="Deem Padel" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b9"  CornerRadius="20" Clicked="b9_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b19" Clicked="Button_Clicked_9"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center" Padding="10">
+                    <Button Text="PAD-L" WidthRequest="300" HeightRequest="80" BackgroundColor="#2c3b53" x:Name="b10"  CornerRadius="20" Clicked="b10_Clicked"/>
+                    <ImageButton Source="stadium.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" x:Name="b20" Clicked="Button_Clicked_10"/>
+                </HorizontalStackLayout>
+                <Frame BorderColor="White" CornerRadius="40" WidthRequest="370" HeightRequest="95" FlowDirection="LeftToRight">
+                    <StackLayout>
+                        <HorizontalStackLayout Spacing="40" HorizontalOptions="Center">
+                            <VerticalStackLayout>
+                                <ImageButton x:Name="stadiumButton" Source="stadium.png" WidthRequest="60" HeightRequest="40" Clicked="ImageButton_Clicked_1" VerticalOptions="StartAndExpand"/>
+                                <Label Text="Stadiums" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout>
+                                <ImageButton x:Name="reservationButton" Source="reservation.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_2" />
+                                <Label Text="Reservation" FontSize="10"/>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout>
+                                <ImageButton x:Name="racButton" Source="rac.png" WidthRequest="30" HeightRequest="40" Clicked="ImageButton_Clicked_3" />
+                                <Label Text="RAC" FontSize="10" HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout>
+                                <ImageButton x:Name="gameButton" Source="game.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_4" />
+                                <Label Text="Game" FontSize="10" HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </Frame>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
